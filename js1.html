@@ -2,9 +2,18 @@
     <head>
         <h2>this is my first js demo</h2>
         <body>
-            <script>
-                document.write(Date());
-            </script>
+            <script type= "text/javascript">
+                var dt= new Date("July 14,2020  16:21:38");
+                document.write("Today is :"+dt.getDay());  
+                var hours =myDate.getHours();
+                var ampm=hours >=12?'PM':'PM';   
+                hours = hours%12;
+                hours = hours?hours:12;
+                var minutes = myDate.getMinutes();
+                minutes = minutes <10?'0'+minutes:minutes;
+                var anytime = hours +"" +ampm+":"+minutes +":"+myDate.getMilliseconds();
+                document.write("\t current time is:"+myTime);
+ </script>
         </body>
     </head>
 </html>
